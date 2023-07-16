@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { ethers } from 'ethers';
-
 import { useStateContext } from '../context';
 import CountBox from '../components/CountBox';
 import CustomButton from "../components/CustomButton";
 import Loader from "../components/Loader";
 import { calculateBarPercentage, daysLeft } from '../utils';
 import { thirdweb } from '../assets';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 const CampaignDetails = () => {
   const { state } = useLocation();
@@ -40,6 +41,14 @@ const CampaignDetails = () => {
   }
 
   return (
+    <>
+    <div className="sm:flex hidden mr-10 relative">
+        <Sidebar />
+      </div>
+
+      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+
+        <Navbar />
     <div>
       {isLoading && <Loader />}
 
@@ -132,6 +141,8 @@ const CampaignDetails = () => {
         </div>
       </div>
     </div>
+    </div>
+    </>
   )
 }
 

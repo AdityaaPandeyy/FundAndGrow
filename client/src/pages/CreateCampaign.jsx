@@ -8,6 +8,8 @@ import Loader from "../components/Loader";
 import { checkIfImage } from '../utils';
 import { useStateContext } from '../context';
 import { useAddress } from '@thirdweb-dev/react';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 
 const CreateCampaign = () => {
   const navigate = useNavigate();
@@ -42,6 +44,14 @@ const CreateCampaign = () => {
     })
   }
   return (
+    <>
+    <div className="sm:flex hidden mr-10 relative">
+        <Sidebar />
+      </div>
+
+      <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
+
+        <Navbar />
     <div className="bg-[#1c1c24] flex justify-center items-center flex-col rounded-[10px] sm:p-10 p-4">
       {isLoading && <Loader />}
       <div className="flex justify-center items-center p-[16px] sm:min-w-[380px] bg-[#3a3a43] rounded-[10px]">
@@ -108,6 +118,8 @@ const CreateCampaign = () => {
         </div>
       </form>
     </div>
+    </div>
+    </>
   )
 }
 

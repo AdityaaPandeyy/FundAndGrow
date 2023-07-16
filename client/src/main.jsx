@@ -6,6 +6,7 @@ import App from './App';
 import "./index.css";
 import { StateContextProvider } from './context';
 import { Sepolia } from "@thirdweb-dev/chains";
+import MainHome from './pages/MainHome';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

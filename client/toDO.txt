@@ -1,0 +1,30 @@
+
+Design all 4 pages
+
+ a) For MainHome :
+
+    About Us
+    Advertisements,
+    Footer
+
+ b) For HowToUse : 
+    
+    Requirements:metamask wallet, coins
+    connect your wallet by clicking on connect button,select ,put amount and invest................
+
+ c) WhyUs : 
+    
+    Security Reasons
+
+ d) ContactUs : 
+    
+    Address
+    email
+    phone
+    Google Map
+    all social sites
+    suggestions(connect to backend)
+
+ e) Sign Up
+
+    
