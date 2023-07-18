@@ -11,11 +11,9 @@
 }
 
 .gradient {
-  background: linear-gradient(to bottom, #000000, #010841);
+  background: linear-gradient(to top, #000000, #010841);
   box-shadow: 0px 2px 4px rgba(0, 5, 26, 0.5);
 }
-
-
 
 
 input[type="date"]::-webkit-calendar-picker-indicator {
