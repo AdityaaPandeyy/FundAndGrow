@@ -3,8 +3,8 @@ Design all 4 pages
 
  a) For MainHome :
 
-    About Us
-    Advertisements,
+    2 Fake Card
+    carousel - https://www.ketto.org/cause/medical-fundraising?utm_source=external_Ketto&utm_medium=google-search&utm_campaign=S14_4000_SALE_Fundraising_KY_ALL_CLK_IND&utm_term=p_fund%20raise&utm_content=medical_resp_ad2&utm_placement=KT17_AG_1865_Fundraising_Generic&gclid=Cj0KCQjw8NilBhDOARIsAHzpbLB-4B6w0Nnx9U7m8kOtSPkIcsHPTDNIbjkEL7EDiscx9xYs8QKr0iEaAhkvEALw_wcB
     Footer
 
  b) For HowToUse : 
