@@ -23,6 +23,7 @@ export default function MainHome() {
           <Link to = "/contact-us" style={{color:"white",marginLeft:"3rem"}}>Contact Us</Link>
           <Link to = "/sign-up" style={{color:"white",marginLeft:"3rem"}}>Sign Up</Link>
           </div>
+          
         </div>
       </nav>
     </>
