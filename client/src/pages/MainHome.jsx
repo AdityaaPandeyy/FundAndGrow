@@ -5,31 +5,26 @@ import App from '../App';
 import HowToUse from './HowToUse';
 import ContactUs from './ContactUs';
 import SignUp from './SignUp';
+import { useEffect, useState } from "react";
 import '../styles/styling.css';
 import '../index.css';
+import Header from '../pages/Header';
+
 
 export default function MainHome() {
+
   return (
     <>
       <nav className="navbar items-center flex-wrap p-6">
-        {/* <div className='pos-fix gradient' style={{width:"100%",height:"5rem"}}> */}
-        <div className='pos-fix m-5'>
-        <div className="block lg:hidden">
+        
+        {/* <div className="block lg:hidden">
           <button className="navbar-burger flex items-center px-3 py-2 border rounded text-gray-200 border-gray-200 hover:text-white hover:border-white">
             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
           </button>
-        </div>
-        <div className="navbar-menu w-full flex-grow lg:flex lg:items-center lg:w-auto">
-          <div className="navbar-nav text-xl lg:flex-grow px-20">
-            <Link to="/fund" style={{ color: "white", marginLeft: "1rem" }} className="nav-text">Fund</Link>
-            <Link to="/how-to-use" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">How to Use</Link>
-            <Link to="/why-us" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Why Us</Link>
-            <Link to="/contact-us" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Contact Us</Link>
-            <Link to="/sign-up" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Sign Up</Link>
-          </div>
-          
-        </div>
-        </div>
+        </div> */}
+
+          <Header />
+      {/* Navigation bar is above */}
         <div>
         <div className='text-white page-text flex ' style={{ marginTop: "8rem" }}>
           <div className='mr-5' style={{ marginTop: '7rem' }}>At StartupChain, we are revolutionizing the way entrepreneurs raise investments for their groundbreaking startups and empowering investors to discover the most promising ventures, all through the transformative power of blockchain Ethereum technology. Our platform is a pioneer in the realm of decentralized fundraising, offering a seamless and secure ecosystem where dreams are funded and innovations thrive.</div>
