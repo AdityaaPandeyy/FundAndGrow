@@ -126,6 +126,12 @@
     width: 50%;
 }
 
+.inputBox .username{
+    display: flex;
+    flex-direction: column;
+    width: 150%;
+}
+
 .formBox .row100 .inputBox{
     width: 100%;
 }
@@ -158,7 +164,7 @@
     color: white;
 }
 
-.inputBox input[type="submit"]{
+.inputBox button{
     background: #18b7ff;
     color: white;
     border: none;
@@ -177,6 +183,122 @@
     color:#18b7ff;
 }
 
-.infoBox .ion-icon{
-    color: #18b7ff;
+.infoBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
+
+.infoBox div span{
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.infoBox div a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.infoBox div p{
+    font-size: 1.1em;
+}
+
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a{
+    font-size: 2em;
+}
+
+.sci li a:hover{
+    color: #ccc;
+}
+
+.map{
+    padding: 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 991px){
+    .contactus{
+        padding: 20px;
+    }
+    .box{
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+    }
+    .formBox .row50{
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox{
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .map{
+        min-height: 300px;
+        padding: 0;
+    }
+}
+
+
+.whyus {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+
+.whyus .title1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.whyus .title1 h2{
+    color: white;
+    font-weight: 500;
+}
+
+.whyus p.para1:first-letter {
+    font-size: 100px;
+    display: block;
+    float: left;
+    line-height: 0.5;
+    margin: 15px 15px 10px 0;
+    color: #18b7ff;
+    margin-right: 5px;
+}
+  
+.whyus p {
+    margin-top: 10px;
+    color: #18b7ff;
+    padding: 25px;
+}
+
