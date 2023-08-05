@@ -29,7 +29,6 @@ export default function Header() {
                   <Link to="/how-to-use" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">How to Use</Link>
                   <Link to="/why-us" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Why Us</Link>
                   <Link to="/contact-us" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Contact Us</Link>
-                  <Link to="/sign-up" style={{ color: "white", marginLeft: "3rem" }} className="nav-text">Sign Up</Link>
                 </div>
               </div>
               </div>
