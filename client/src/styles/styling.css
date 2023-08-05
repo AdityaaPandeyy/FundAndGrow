@@ -169,7 +169,7 @@
     color: white;
     border: none;
     font-size: 1.1em;
-    max-width: 120px;
+    width: 40%;
     font-weight: 500;
     cursor: pointer;
     padding: 14px 15px;
@@ -300,5 +300,11 @@
     margin-top: 10px;
     color: #18b7ff;
     padding: 25px;
+    font-size: 2rem;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    /* Add any other relevant styles */
+  }
