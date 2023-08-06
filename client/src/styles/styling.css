@@ -32,13 +32,6 @@
     width: 100%;
 }
 
-.header.fixed {
-    background: linear-gradient(to left, #3a0a32, #440118);
-    width: auto;
-    top:auto;
-    border-bottom: 1rem;
-    transition: .3s ease-in-out;
-}
 
 * {
     margin: 0;
@@ -49,7 +42,8 @@
 .contactus {
     position: relative;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 80px;
+    font-family: 'GRoman', sans-serif !important;
 }
 
 .contactus .title{
@@ -172,7 +166,7 @@
     width: 40%;
     font-weight: 500;
     cursor: pointer;
-    padding: 14px 15px;
+    padding: 10px 15px;
 }
 
 .inputBox ::placeholder{
@@ -210,7 +204,7 @@
 }
 
 .sci{
-    margin-top: 40px;
+    margin-top: 25px;
     display: flex;
 }
 
@@ -220,7 +214,7 @@
 }
 
 .sci li a{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .sci li a:hover{
@@ -272,6 +266,7 @@
     position: relative;
     width: 100%;
     padding: 40px 100px;
+    font-family: 'GRoman', sans-serif !important;
 }
 
 .whyus .title1{
@@ -287,24 +282,233 @@
 }
 
 .whyus p.para1:first-letter {
-    font-size: 100px;
+    font-size: 180px;
     display: block;
     float: left;
     line-height: 0.5;
     margin: 15px 15px 10px 0;
-    color: #18b7ff;
+    color: white;
     margin-right: 5px;
+    font-family: 'GRoman', sans-serif !important;
 }
   
 .whyus p {
     margin-top: 10px;
-    color: #18b7ff;
+    color: whitesmoke;
     padding: 25px;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    font-family: 'GRoman', sans-serif !important;
 }
 
 .main-container {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     /* Add any other relevant styles */
+}
+
+.whyus ul.ab{
+    list-style: square inside;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1.1rem;
+    font-family: 'GRoman', sans-serif !important;
+}
+
+.howtouse {
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+    font-family: 'GRoman', sans-serif !important;
+}
+
+.howtouse .title2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.howtouse .title2 h2{
+    color: white;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.howtouse .myCard {
+    background-color: transparent;
+    width: 350px;
+    height: 400px;
+    perspective: 1000px;
+    margin-top: 50px;
   }
+  
+  .howtouse .title {
+    font-size: 1.3em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    font-family: 'GRoman', sans-serif !important;
+  }
+  
+  .howtouse .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+  }
+  
+  .howtouse .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .howtouse .frontSide,
+  .howtouse .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+  }
+  
+  .howtouse .frontSide,
+  .howtouse .frontSide::before {
+    background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
+  }
+  
+  .howtouse .backSide,
+  .howtouse .backSide::before {
+    background-image: linear-gradient(to top, rgb(9, 32, 63) 0%, rgb(83, 120, 149) 100%);
+  }
+  
+  .howtouse .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  .howtouse .frontSide::before,
+  .howtouse .backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }
+
+  .howtouse .allcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 75px;
+  }
+
+
+
+  .ether .card {
+    width: 195px;
+    height: 285px;
+    background: #313131;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .ether .img {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+  }
+  
+  .ether .textBox {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+  }
+  
+  .ether .textBox > .text {
+    font-weight: bold;
+  }
+  
+  .ether .textBox > .head {
+    font-size: 20px;
+  }
+  
+  .ether .textBox > .price {
+    font-size: 17px;
+  }
+  
+  .ether .textBox > span {
+    font-size: 12px;
+    color: lightgrey;
+  }
+  
+  .ether .card:hover > .textBox {
+    opacity: 1;
+  }
+  
+  .ether .card:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+    animation: anim 3s infinite;
+  }
+  
+  @keyframes anim {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .ether .card:hover {
+    transform: scale(1.04) rotate(-1deg);
+  }
+  
+  

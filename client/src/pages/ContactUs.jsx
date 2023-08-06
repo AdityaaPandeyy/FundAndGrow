@@ -32,7 +32,7 @@ export default function ContactUs() {
         <Header />
         <div className="contactus" style={{width:"120%"}}>
           <div className="title">
-            <h2 style={{ color: "#187bff" }}>Get in Touch</h2>
+            <h2 style={{ color: "white" }}>Get in Touch</h2>
           </div>
           <div className="box">
             <div className="contact form">
