@@ -46,7 +46,6 @@ export default function MainHome() {
 
           <Header />
       {/* Navigation bar is above */}
-        
         <div className='text-white page-text flex ' style={{ marginTop: "8rem" }}>
           <div className='mr-5' style={{ marginTop: '5rem' }}>At StartupChain, we are revolutionizing the way entrepreneurs raise investments for their groundbreaking startups and empowering investors to discover the most promising ventures, all through the transformative power of blockchain Ethereum technology. Our platform is a pioneer in the realm of decentralized fundraising, offering a seamless and secure ecosystem where dreams are funded and innovations thrive.</div>
           <div className="ether">

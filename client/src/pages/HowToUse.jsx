@@ -45,7 +45,7 @@ export default function HowToUse() {
                 <p>Hover Me</p>
             </div>
             <div className="backSide">
-                <p className="title">1. Go to funds. <br/>2. Connect your metamask account. <br/>3. Click any one of the campaign from all Campaigns. <br/>4. Enter the amount and click the fund cammpaign button.</p>
+                <p className="title">1. Go to funds. <br/>2. Connect your metamask account. <br/>3. Click any one of the campaign from all Campaigns. <br/>4. Enter the amount and click the fund campaign button.</p>
                 <p>Leave Me</p>
             </div>
         </div>
