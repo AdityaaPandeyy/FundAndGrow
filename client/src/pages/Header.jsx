@@ -42,7 +42,7 @@ export default function Header() {
         </div>
 
       </div>
-      <div className='hidden lg:block'>
+      <div className='hidden lg:block md:hidden'>
         <nav className="navbar items-center flex-wrap p-6">
           <div>
             <div className="className={`absolute top-[60px] right-0 left-0 z-10 shadow-secondary py-4 ${!toggleDrawer ? '-translate-y-[100vh]' : 'translate-y-0'} transition-all duration-700`}">
@@ -56,6 +56,34 @@ export default function Header() {
             </div>
           </div>
         </nav>
+      </div>
+      <div className='hidden md:block lg:hidden'>
+        <img
+          src={menu}
+          alt="menu"
+          className="w-[34px] h-[34px] object-contain cursor-pointer"
+          onClick={() => setToggleDrawer((prev) => !prev)}
+        />
+
+        <div className={`absolute top-[60px] right-0 left-0 bg-[#1c1c24] z-10 shadow-secondary py-4 ${!toggleDrawer ? '-translate-y-[100vh]' : 'translate-y-0'} transition-all duration-700`}>
+          <ul className="mb-4">
+            {mainnavlinks.map((link) => (
+              <li
+                key={link.name}
+                className={`flex p-4 ${isActive === link.name && 'bg-[#3a3a43]'}`}
+                onClick={() => {
+                  setIsActive(link.name);
+                  setToggleDrawer(false);
+                  navigate(link.link);
+                }}
+              >
+                <p className={`ml-[20px] font-epilogue font-semibold text-[14px] ${isActive === link.name ? 'text-[#1dc071]' : 'text-[#808191]'}`}>
+                  {link.name}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   )

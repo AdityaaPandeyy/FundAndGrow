@@ -30,7 +30,7 @@ export default function ContactUs() {
     <>
       <div className="main-container">
         <Header />
-        <div className="contactus" style={{width:"120%"}}>
+        <div className="contactus">
           <div className="title">
             <h2 style={{ color: "white" }}>Get in Touch</h2>
           </div>
