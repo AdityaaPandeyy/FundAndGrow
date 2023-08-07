@@ -41,15 +41,15 @@ export default function MainHome() {
   }, []);
 
   return (
-    <div style={{width:"100vw"}}>
+    <div>
       <nav className="navbar items-center flex-wrap p-6">
 
           <Header />
       {/* Navigation bar is above */}
-        <div className='text-white page-text flex ' style={{ marginTop: "8rem" }}>
-          <div className='mr-5' style={{ marginTop: '5rem' }}>At StartupChain, we are revolutionizing the way entrepreneurs raise investments for their groundbreaking startups and empowering investors to discover the most promising ventures, all through the transformative power of blockchain Ethereum technology. Our platform is a pioneer in the realm of decentralized fundraising, offering a seamless and secure ecosystem where dreams are funded and innovations thrive.</div>
+        <div className='text-white page-text flex'>
+          <div className='mr-5' >At StartupChain, we are revolutionizing the way entrepreneurs raise investments for their groundbreaking startups and empowering investors to discover the most promising ventures, all through the transformative power of blockchain Ethereum technology. Our platform is a pioneer in the realm of decentralized fundraising, offering a seamless and secure ecosystem where dreams are funded and innovations thrive.</div>
           <div className="ether">
-          <div className="card" style={{width:"18rem",height:"24rem"}}>
+          <div className="card">
       <svg
         className="img"
         xmlns="http://www.w3.org/2000/svg"

@@ -230,7 +230,7 @@
     height: 100%;
 }
 
-@media (max-width: 991px){
+/* @media (max-width: 991px){
     .contactus{
         padding: 20px;
     }
@@ -260,7 +260,8 @@
         min-height: 300px;
         padding: 0;
     }
-}
+} */
+
 
 
 .whyus {
